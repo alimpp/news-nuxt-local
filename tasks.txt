@@ -1,0 +1,12 @@
+- Responsive navbar style => done 
+- Hamburger menu handle => done
+- Sidebar menu style => done
+------------------------------
+- Like handle
+- Dislike handle 
+- Add news store to project
+----------------------
+- Create news form
+---------------------------------
+- My shared news page
+- Share with you handle
