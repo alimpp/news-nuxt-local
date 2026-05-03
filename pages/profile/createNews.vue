@@ -107,13 +107,6 @@ const source = ref([
     path: "/profile/myNews",
   },
   {
-    id: 2,
-    title: "Favorites news",
-    text: "All favorites news",
-    borderBottom: true,
-    path: "/profile/favorites",
-  },
-  {
     id: 3,
     title: "Theme",
     text: "Set theme application",
