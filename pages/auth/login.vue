@@ -14,7 +14,7 @@
     <BaseButton
       @click="navigateTo('/auth/register')"
       name="Create Account"
-      bg="info"
+      bg="danger"
       class="mt-10"
     />
   </div>

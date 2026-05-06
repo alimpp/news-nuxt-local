@@ -14,5 +14,6 @@
 - Theme application
 - Handle show avatar in sidebar by auth state
 -----------------------------
+- set theme in other elements
 - news pages
 - footer created 
