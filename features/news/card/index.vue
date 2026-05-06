@@ -78,8 +78,11 @@ const share = () => {
 
 <style scoped>
 .news-content-custom-style {
-  background: rgba(255, 0, 0, 0.184);
+  background: rgba(255, 0, 0, 0.075);
   border-left: 2px solid red;
   border-radius: 0 5px 5px 0;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 </style>

@@ -1,6 +1,10 @@
 <template>
   <NuxtLayout>
-    <div :class="{ 'back-navigation': isBack }">
+    <div
+      :class="{
+        'back-navigation': isBack,
+      }"
+    >
       <NuxtPage />
     </div>
   </NuxtLayout>

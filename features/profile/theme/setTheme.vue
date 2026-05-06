@@ -9,7 +9,7 @@
     >
       <div
         :style="{ background: item.color }"
-        class="cursor-pointer w-60-px h-60-px border-rounded color-white f-s-12 f-w-400 flex align-center justify-center"
+        class="cursor-pointer w-60-px h-60-px border-rounded color-gray f-s-12 f-w-400 flex align-center justify-center"
       >
         {{ item.name }}
       </div>
@@ -23,9 +23,9 @@ import { useAppStore } from "../../../stores/index";
 const appStore = useAppStore();
 
 const colors = ref([
-  { id: 0, color: "#5a58f7", name: "primary" },
-  { id: 1, color: "#04213e", name: "dark" },
-  { id: 2, color: "#640505", name: "light" },
+  { id: 0, color: "#cfe9f4", name: "primary" },
+  { id: 1, color: "#161717", name: "dark" },
+  { id: 2, color: "#fff", name: "light" },
 ]);
 
 const setColor = (theme) => {

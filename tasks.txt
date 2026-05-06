@@ -13,3 +13,6 @@
 -----------------------------
 - Theme application
 - Handle show avatar in sidebar by auth state
+-----------------------------
+- news pages
+- footer created 

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-column container">
+  <div class="flex flex-column container h-100-dvh">
     <BaseBreadCrumbs class="mt-10" :source="['PROFILE']" />
     <div class="flex flex-column mt-15">
       <BaseTitleBar
