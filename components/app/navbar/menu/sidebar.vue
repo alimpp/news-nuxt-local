@@ -7,7 +7,7 @@
         <AppNavbarLogo />
       </div>
 
-      <AppNavbarAvatar class="mt-20" />
+      <AppNavbarAvatar class="mt-20" v-if="userStore.getAuthenticated" />
 
       <div class="flex flex-column px-15 mt-20">
         <div
@@ -29,8 +29,10 @@
 
 <script setup>
 import { navigateTo } from 'nuxt/app';
+import { useUserStore } from '../../../../stores/index'
 
 const emit = defineEmits(['closeSideMenu'])
+const userStore = useUserStore()
 
 const menuItems = ref([
   {
@@ -74,12 +76,6 @@ const menuItems = ref([
         path: "/news/international",
       },
     ],
-  },
-  {
-    id: 2,
-    title: "Support",
-    path: "/support",
-    child: [],
   },
 ]);
 

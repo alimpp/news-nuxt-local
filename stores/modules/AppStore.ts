@@ -21,14 +21,19 @@ export class AppStore extends BaseStore<IApplication> {
 
   private constructor() {
     super("application", {
-      theme: "light",
+      theme: "primary",
       users: [],
     });
     StoreManager.register(this);
   }
 
+  public get getTheme(): string {
+    return this._state.theme;
+  }
+
   public setTheme(theme: string): void {
     this._state.theme = theme;
+    localStorage.setItem("theme", theme);
   }
 
   public configUsersMock() {

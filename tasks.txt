@@ -10,3 +10,6 @@
 ---------------------------------
 - My shared news page
 - Share with you handle
+-----------------------------
+- Theme application
+- Handle show avatar in sidebar by auth state

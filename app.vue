@@ -30,6 +30,9 @@ onMounted(() => {
   appStore.configUsersMock();
   userController.getUserProfile();
   newsController.getAllNews();
+  const theme = localStorage.getItem("theme");
+  if (!theme) localStorage.setItem("theme", "primary");
+  else appStore.setTheme(theme);
 });
 </script>
 

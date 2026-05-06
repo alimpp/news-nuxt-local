@@ -15,7 +15,9 @@
 
 <script setup>
 import { navigateTo } from "nuxt/app";
+import { useUserStore } from "../../../../stores";
 
+const userStore = useUserStore();
 const activeHover = ref(false);
 const dataHover = ref(null);
 const menuItems = ref([
@@ -60,19 +62,16 @@ const menuItems = ref([
       },
     ],
   },
-  {
-    id: 2,
-    title: "Support",
-    path: "/support",
-  },
 ]);
 
 const mouseHover = (event, item) => {
   if (!item.path) {
     activeHover.value = true;
     const rect = event.target.getBoundingClientRect();
+    console.log(userStore.getAuthenticated);
+    const customSpace = userStore.getAuthenticated ? 200 : 120;
     dataHover.value = {
-      x: rect.left - 230,
+      x: rect.left - customSpace,
       y: 50,
       ...item,
     };
