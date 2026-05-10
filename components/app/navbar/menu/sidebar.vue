@@ -48,40 +48,40 @@ const menuItems = ref([
       {
         id: 0,
         title: "Politics",
-        path: "/news/politics ",
+        path: "Politics ",
       },
       {
         id: 1,
         title: "Economy",
-        path: "/news/economy ",
+        path: "Economy",
       },
       {
         id: 2,
         title: "Society",
-        path: "/news/society ",
+        path: "Society",
       },
       {
         id: 3,
         title: "Sports",
-        path: "/news/sports",
+        path: "Sports",
       },
       {
         id: 4,
         title: "Technology",
-        path: "/news/technology",
+        path: "Technology",
       },
       {
         id: 5,
         title: "International",
-        path: "/news/international",
+        path: "International",
       },
     ],
   },
 ]);
 
-const navigate = (item) => {
+const navigate = (item) => {  
    if(item.path) {
-    navigateTo(item.path)
+    navigateTo(`/news/${item.path}`)
     emit('closeSideMenu')
    }
 }

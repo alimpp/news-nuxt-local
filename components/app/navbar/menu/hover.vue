@@ -4,7 +4,7 @@
       top: `${adjustedTop}px`,
       left: `${data.x}px`,
     }"
-    class="flex flex-column px-10 py-10 cursor-pointer fade-animation menu-hover"
+    class="flex flex-column px-10 py-10 cursor-pointer fade-animation menu-hover color-dark"
     ref="hoverMenuRef"
   >
     <span
@@ -12,6 +12,7 @@
       class="f-s-14 f-w-500 py-5 px-5"
       v-for="subItem in data.child"
       :key="subItem.id"
+      @click="navigateTo(`/news/${subItem.path}`)"
     >
       {{ subItem.title }}
     </span>
@@ -19,6 +20,8 @@
 </template>
 
 <script setup>
+import { navigateTo } from "nuxt/app";
+
 const props = defineProps({
   data: {
     type: Object,

@@ -23,7 +23,7 @@ import { useAppStore } from "../../../stores/index";
 const appStore = useAppStore();
 
 const colors = ref([
-  { id: 0, color: "#cfe9f4", name: "primary" },
+  { id: 0, color: "#d9fae8", name: "primary" },
   { id: 1, color: "#161717", name: "dark" },
   { id: 2, color: "#fff", name: "light" },
 ]);
